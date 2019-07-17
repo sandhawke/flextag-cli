@@ -1,0 +1,39 @@
+{
+  "name": "flextag-cli",
+  "version": "0.0.0",
+  "description": "Command line interface to flextag libraries",
+  "bin": {
+    "tag": "./cli.js",
+    "flextag": "./cli.js"
+  },
+  "scripts": {
+    "test": "npx standard && npx tap --cov test*.js test/*.js",
+    "tap": "npx tap --cov test*.js test/*.js",
+    "coveralls": "export COVERALLS_REPO_TOKEN=$(cat $HOME/.coveralls-tokens/$npm_package_name); npx tap --cov test*.js test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandhawke/flextag-cli.git"
+  },
+  "keywords": [
+    "sandhawke"
+  ],
+  "author": "Sandro Hawke (http://hawke.org/sandro)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sandhawke/flextag-cli/issues"
+  },
+  "homepage": "https://github.com/sandhawke/flextag-cli#readme",
+  "devDependencies": {
+    "tape": "^4.9.1"
+  },
+  "dependencies": {
+    "debug": "^4.1.0",
+    "flextag-parser": "^0.2.0",
+    "got-integrity": "^2.0.1",
+    "json": "^9.0.6",
+    "jsonic": "^0.3.1",
+    "stream-string": "^2.0.1",
+    "yargs": "^13.3.0"
+  }
+}
