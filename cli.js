@@ -1,13 +1,13 @@
 #!/usr/bin/env node
 const debug = require('debug')('flextag-cli')
-const got = require('/home/sandro/Repos/got-integrity')
+const got = require('got-integrity')
 const jsonic = require('jsonic')
 const streamString = require('stream-string')
 const fs = require('fs')
 const tty = require('tty')
 const yargs = require('yargs')
 // for now do them separately
-const flextagParser = require('/home/sandro/Repos/flextag-parser')
+const flextagParser = require('flextag-parser')
 
 yargs // eslint-disable-line
   .usage('$0 [options] [command]')
