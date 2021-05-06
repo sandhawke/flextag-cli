@@ -31,7 +31,7 @@
     "debug": "^4.1.0",
     "flextag-parser": "^0.2.0",
     "got-integrity": "^2.0.1",
-    "json": "^9.0.6",
+    "json": "^10.0.0",
     "jsonic": "^0.3.1",
     "stream-string": "^2.0.1",
     "yargs": "^13.3.0"
